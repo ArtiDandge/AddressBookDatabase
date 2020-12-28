@@ -82,10 +82,6 @@ alter table PersonContactDetails
 add StateID int
 references State(state_id)
 
-
-alter table City
-drop column StateID
-
 insert into PersonContactDetails(person_id, last_name, first_name, address, phone_number, email) values
 (1, 'John', 'Smith', 'oxferd street', '7954321899', 'john123@gmail.com'),
 (2, 'Bob', 'Smith', 'ozo street', '9954321899', 'bob123@gmail.com') 
